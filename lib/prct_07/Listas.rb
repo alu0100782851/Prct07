@@ -23,4 +23,19 @@ class Lista
         @contador = @contador + 1
         
     end
+    
+    def insert_tail(nodo)
+        if empty 
+            insert_head(nodo)
+        else
+            aux = @head
+            while aux.siguiente != nil do
+                aux = aux.siguiente
+            end
+            aux.siguiente = nodo
+            nodo.siguiente = nil
+            @tail=nodo
+            @contador = @contador + 1
+        end
+    end
 end
