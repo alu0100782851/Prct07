@@ -59,6 +59,11 @@ describe Lista do
       expect(@lista.extract_head()).to eq(@nodo3.value)
     end
     
+    it "#Debe existir una lista con su cabeza" do
+      @lista.insert_head(@nodo5)
+      expect(@lista.head.class).to eq(Nodo)
+    end
+    
   end
   
 end
