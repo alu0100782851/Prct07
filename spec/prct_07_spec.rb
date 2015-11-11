@@ -44,5 +44,11 @@ describe Lista do
       expect(@lista.extract_head()).to eq(@nodo1.value)
     end
     
+    it "#Se puede insertar un elemento" do
+     	  @lista.insert_head(@nodo2)
+     	  expect(@lista.head.value).to eq(@nodo2.value)
+    end
+    
   end
+  
 end
