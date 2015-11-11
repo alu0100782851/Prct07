@@ -38,4 +38,16 @@ class Lista
             @contador = @contador + 1
         end
     end
+    
+    def extract_head
+        aux = @head
+        @head = @head.siguiente
+        @contador = @contador - 1
+        if @head == nil
+            @tail = nil
+        end
+        return aux.value
+    end
+    
+    
 end
