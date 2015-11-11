@@ -14,3 +14,26 @@ describe Bibliografias do
   end
   
 end
+
+#Pruebas con la lista
+describe Lista do
+  
+    before :each do
+      #Nodos que contienen las referencias para hacer las pruebas
+      @nodo1 = Nodo.new(@libro_1)
+      @nodo2 = Nodo.new(@libro_2)
+      @nodo3 = Nodo.new(@libro_3)
+      @nodo4 = Nodo.new(@libro_4)
+      @nodo5 = Nodo.new(@libro_5)
+
+      @lista = Lista.new
+    end
+
+  describe "Nodo" do
+   
+    it "#Debe existir un Nodo de la lista con sus datos y su siguiente" do
+      expect(@nodo1.class).to eq(Nodo)
+    end 
+  
+  end
+end
