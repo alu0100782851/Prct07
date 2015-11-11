@@ -36,4 +36,13 @@ describe Lista do
     end 
   
   end
+  
+  describe "Lista" do
+
+    it "#Se extrae el primer elemento de la lista" do
+      @lista.insert_head(@nodo1)
+      expect(@lista.extract_head()).to eq(@nodo1.value)
+    end
+    
+  end
 end
