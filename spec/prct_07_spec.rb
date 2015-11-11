@@ -49,6 +49,16 @@ describe Lista do
      	  expect(@lista.head.value).to eq(@nodo2.value)
     end
     
+    it "#Se pueden insertar varios elementos" do
+      @lista.insert_head(@nodo3)
+      @lista.insert_tail(@nodo4)
+      @lista.insert_head(@nodo5)
+      
+      expect(@lista.extract_head()).to eq(@nodo5.value)
+      expect(@lista.extract_tail()).to eq(@nodo4.value)
+      expect(@lista.extract_head()).to eq(@nodo3.value)
+    end
+    
   end
   
 end
