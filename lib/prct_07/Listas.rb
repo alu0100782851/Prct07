@@ -49,5 +49,22 @@ class Lista
         return aux.value
     end
     
+    def extract_tail
+        actual = @head
+        
+        if @contador == 1
+            return extract_head
+        else    
+            while actual.siguiente != nil do
+                previo = actual
+                actual = actual.siguiente
+            end
+            previo.siguiente = nil
+            @tail = previo
+            @contador = @contador - 1
+            return actual.value
+        end
+    end
+    
     
 end
