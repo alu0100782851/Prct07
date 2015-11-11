@@ -1,4 +1,4 @@
-###**Lenguajes y Paradigmas de la Programación. Práctica 6**
+###**Lenguajes y Paradigmas de la Programación. Práctica 7**
 *Autor: Moisés Yanes Carballo*
 
 
