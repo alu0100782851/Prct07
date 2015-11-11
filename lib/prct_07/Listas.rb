@@ -66,5 +66,20 @@ class Lista
         end
     end
     
+    def to_s
+        aux = @head
+        if empty != true
+            puts "\n******REFERENCIAS BIBLIOGRAFICAS******"
+        end
+        while aux != nil do
+            var = aux.value
+            print "#{var}\n\n"
+            aux = aux.siguiente
+        end
+    end
+    
+    def empty
+        return contador==0
+    end
     
 end
